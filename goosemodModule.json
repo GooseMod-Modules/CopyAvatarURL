@@ -1,0 +1,12 @@
+{
+  "main": "src/index.js",
+
+  "name": "Copy Avatar URL",
+  "description": "Adds context menu action to copy user's avatar URLs.",
+
+  "tags": ["context menu"],
+
+  "authors": ["506482395269169153"],
+
+  "version": "1.0.0"
+}
