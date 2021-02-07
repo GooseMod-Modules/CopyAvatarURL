@@ -1,5 +1,5 @@
 {
-  "main": "src/index.js",
+  "main": "index.js",
 
   "name": "Copy Avatar URL",
   "description": "Adds context menu action to copy user's avatar URLs.",
