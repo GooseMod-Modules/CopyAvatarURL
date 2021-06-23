@@ -1,4 +1,7 @@
 import { contextMenu } from '@goosemod/patcher';
+import { findByProps } from '@goosemod/webpack';
+
+const { copy } = findByProps('SUPPORTS_COPY', 'copy');
 
 let unpatch;
 
@@ -8,7 +11,7 @@ export default {
       unpatch = contextMenu.patch('user', {
         label: 'Copy Avatar URL',
         action: (_orig, info) => {
-          window.DiscordNative.clipboard.copy(info.user.avatarURL)
+          copy(info.user.avatarURL)
         }
       });
     },
