@@ -11,7 +11,7 @@ export default {
       unpatch = contextMenu.patch('user', {
         label: 'Copy Avatar URL',
         action: (_orig, info) => {
-          copy(info.user.avatarURL)
+          copy(info.user.getAvatarURL(info.guildId, true).split("?")[0]);
         }
       });
     },
